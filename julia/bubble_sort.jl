@@ -2,12 +2,12 @@ x = [0, 2, -5, -3,  -39]
 
 
 bubble_sort! = function (x::Array)
-    for j in 1:length(x)
-        for i in 1:(length(x) - 1)
+    for j in reverse(1 : (length(x) - 1 ))
+        for i in 1:j
             if x[i] > x[i+1]
-                j = x[i+1]
+                l = x[i+1]
                 x[i+1] = x[i]
-                x[i] = j
+                x[i] = l
             end
         end
     end
@@ -17,7 +17,5 @@ end
 
 bubble_sort!(x)
 
-
-#range(start = 1, stop=200, step=10)
 
 
