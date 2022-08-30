@@ -1,35 +1,32 @@
-x = [1, -3, -4, 2]
+x = [0, -3, -4, 45]
 
 
-
-for j in 1:length(x)
-    min = 1
-    j = x[j]
-    for i in j:length(x)
-        if x[i] < min
-            min = x[i]
-            x[i] = j
+selection_sort! = function (x)
+    for j in 1:length(x)
+        min = x[j]
+        for i in j:length(x)
+            if x[i] < min
+                k = x[j]
+                min = x[i]
+                x[i] = k
+            end
+            x[j] = min
         end
-        x[j] = min
     end
+    return x    
 end
 
 
 
-min = 1
-j = 1
+x = [0, -2, -2.1]
+
+selection_sort!(x)
 
 
 
-[-3, 1, -4, 2]
 
 
-min = -3
 
-x[j] = 1
-
-
-[-3, 1, -4, 2]
 
 
 
