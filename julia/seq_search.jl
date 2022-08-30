@@ -1,8 +1,3 @@
-x = 2
-
-d = [0, 7, 3]
-
-
 seq_search = function (x, d)
     ok = false
     for i in 1:length(d)
@@ -18,4 +13,6 @@ seq_search = function (x, d)
     end
 end
 
-seq_search(x, d)
+
+
+
