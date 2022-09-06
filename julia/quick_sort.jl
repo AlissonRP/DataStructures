@@ -1,4 +1,3 @@
-
 quick_sort  = function (array)
     if length(array) <= 1
         return array
@@ -9,6 +8,4 @@ quick_sort  = function (array)
 
     return vcat(less, pivot, greater)
 end
-
-
 
