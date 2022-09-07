@@ -1,4 +1,4 @@
-quick_sort  = function (array)
+quick_sort  = function (array::Array)
     if length(array) <= 1
         return array
     end
